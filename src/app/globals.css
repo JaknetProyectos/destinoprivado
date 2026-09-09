@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 192 17% 14%;
+    --card: 0 0% 100%;
+    --card-foreground: 192 17% 14%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 192 17% 14%;
+    --primary: 214 89% 63%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 76% 63%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215 16.3% 46.9%;
+    --accent: 0 76% 63%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 214 89% 63%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 192 17% 14%;
+    --foreground: 0 0% 98%;
+    --card: 192 17% 14%;
+    --card-foreground: 0 0% 98%;
+    --popover: 192 17% 14%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 214 89% 63%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 76% 63%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 0 76% 63%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 214 89% 63%;
+  }
+}
+
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Albert Sans', sans-serif;
+  }
+}
+
+@layer utilities {
+  .font-script {
+    font-family: 'Covered By Your Grace', cursive;
+  }
+
+  .text-teal {
+    color: var(--teal);
+  }
+
+  .bg-teal {
+    background-color: var(--teal);
+  }
+
+  .text-orange-custom {
+    color: var(--orange);
+  }
+
+  .bg-orange-custom {
+    background-color: var(--orange);
+  }
+
+  .hover\:bg-orange-hover:hover {
+    background-color: var(--orange-hover);
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom animations */
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Decorative dots */
+.dot-teal {
+  width: 12px;
+  height: 12px;
+  background-color: var(--teal);
+  border-radius: 50%;
+}
+
+.dot-green {
+  width: 12px;
+  height: 12px;
+  background-color: #34d399;
+  border-radius: 50%;
+}
+
+.markdown {
+  @apply text-base leading-relaxed;
+}
+
+/* HEADINGS */
+
+.markdown h1 {
+  @apply text-4xl font-black mt-10 mb-6 leading-tight;
+}
+
+.markdown h2 {
+  @apply text-3xl font-bold mt-8 mb-5 leading-tight;
+}
+
+.markdown h3 {
+  @apply text-2xl font-bold mt-7 mb-4;
+}
+
+.markdown h4 {
+  @apply text-xl font-semibold mt-6 mb-3;
+}
+
+.markdown h5 {
+  @apply text-lg font-semibold mt-5 mb-2;
+}
+
+.markdown h6 {
+  @apply text-base font-semibold mt-4 mb-2 uppercase tracking-wide;
+}
+
+/* PARAGRAPHS */
+
+.markdown p {
+  @apply mb-5 leading-8;
+}
+
+/* EMPHASIS */
+
+.markdown strong {
+  @apply font-bold;
+}
+
+.markdown em {
+  @apply italic;
+}
+
+.markdown del {
+  @apply line-through opacity-70;
+}
+
+/* LINKS */
+
+.markdown a {
+  @apply underline underline-offset-4 transition-opacity hover:opacity-70;
+}
+
+/* LISTS */
+
+.markdown ul {
+  @apply my-5 ml-6 list-disc space-y-3;
+}
+
+.markdown ol {
+  @apply my-5 ml-6 list-decimal space-y-3;
+}
+
+.markdown li {
+  @apply pl-1 leading-7;
+}
+
+.markdown li>ul,
+.markdown li>ol {
+  @apply mt-3;
+}
+
+/* BLOCKQUOTE */
+
+.markdown blockquote {
+  @apply border-l-4 pl-5 pr-4 py-2 my-6 italic opacity-80;
+}
+
+/* CODE */
+
+.markdown code {
+  @apply rounded-md px-1.5 py-1 text-sm font-mono;
+}
+
+.markdown pre {
+  @apply overflow-x-auto rounded-2xl p-5 my-6;
+}
+
+.markdown pre code {
+  @apply bg-transparent p-0 text-sm;
+}
+
+/* TABLES */
+
+.markdown table {
+  @apply w-full border-collapse my-8 overflow-hidden rounded-2xl;
+}
+
+.markdown thead {
+  @apply backdrop-blur;
+}
+
+.markdown th {
+  @apply border px-4 py-3 text-left font-semibold;
+}
+
+.markdown td {
+  @apply border px-4 py-3 align-top;
+}
+
+/* HORIZONTAL RULE */
+
+.markdown hr {
+  @apply my-10 opacity-20;
+}
+
+/* IMAGES */
+
+.markdown img {
+  @apply my-6 w-full rounded-2xl object-cover;
+}
+
+/* SPACING */
+
+.markdown>*:first-child {
+  @apply mt-0;
+}
+
+.markdown>*:last-child {
+  @apply mb-0;
+}
+
+strong {
+  display: inline;
+  white-space: normal;
+
+}

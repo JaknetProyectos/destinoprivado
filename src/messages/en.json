@@ -1,0 +1,555 @@
+{
+  "header": {
+    "navigation": {
+      "tours": "Excursions",
+      "gastronomicExperiences": "Culinary Journeys",
+      "ourJourney": "Our Story",
+      "contact": "Get in Touch"
+    },
+    "language": {
+      "english": "English",
+      "spanish": "Spanish"
+    },
+    "cart": "Basket",
+    "menu": "Options",
+    "logoAlt": "Destino Privado mark"
+  },
+  "hero": {
+    "destinationOptions": {
+      "cdmx": "Mexico City",
+      "gastronomy": "CDMX Gastronomy",
+      "guanajuato": "Guanajuato",
+      "losCabos": "Los Cabos",
+      "oaxaca": "Oaxaca",
+      "yucatan": "Yucatán",
+      "cancun": "Cancun"
+    },
+    "backgroundAlt": "Travel backdrop image",
+    "badge": "Exclusive experiences in Mexico",
+    "title": {
+      "first": "Explore Mexico",
+      "highlight": "far beyond",
+      "last": "the ordinary"
+    },
+    "description": "Excursions, cuisine, and activities crafted for adventurers seeking authenticity, comfort, and lifelong memories.",
+    "destination": {
+      "label": "Location",
+      "loading": "Searching destinations...",
+      "placeholder": "Choose a destination"
+    },
+    "travelers": {
+      "label": "Passengers",
+      "options": {
+        "one": "1 Adult",
+        "two": "2 Adults",
+        "three": "3 Adults",
+        "four": "4 Adults",
+        "fivePlus": "5+ Adults"
+      }
+    },
+    "date": "Schedule",
+    "search": "Filter"
+  },
+  "about": {
+    "badge": "Who we are",
+    "title": {
+      "first": "Enjoy adventures that genuinely",
+      "highlight": "are worth your time"
+    },
+    "description": "At Destino Privado, we build authentic, comfortable, and unforgettable adventures. We concentrate on high-touch service, flawless logistics, and activities designed to connect deeply with you and your surroundings.",
+    "cta": "Reserve today",
+    "imageAlt": "Travel adventure",
+    "card": {
+      "subtitle": "Unforgettable moments",
+      "title": "Explore Mexico through Destino Privado"
+    }
+  },
+  "cart": {
+    "hero": {
+      "badge": "Protected purchase",
+      "title": "Finalize your booking smoothly.",
+      "description": "Verify your activities, enter your promo code, and complete the billing fields. Payment takes place right inside the basket, after which we will email your vouchers.",
+      "badges": {
+        "safePayment": "Encrypted transaction",
+        "emailConfirmation": "Email notification",
+        "personalizedAttention": "Tailored support"
+      }
+    },
+    "success": {
+      "badge": "Payment authorized",
+      "title": "Your transaction was successfully completed.",
+      "description": "Please check your inbox to view your receipt and itinerary details. Should you need extra help, our staff is ready to assist.",
+      "continueExploring": "Keep discovering",
+      "backHome": "Return to main page"
+    },
+    "cartHeader": {
+      "title": "Your basket",
+      "count": "{itemCount} {serviceWord} across {productCount} {productWord}",
+      "serviceSingular": "activity",
+      "servicePlural": "activities",
+      "productSingular": "item",
+      "productPlural": "items"
+    },
+    "empty": {
+      "title": "No activities added to your basket",
+      "description": "Select experiences to proceed with your order.",
+      "cta": "Browse catalog"
+    },
+    "item": {
+      "adults": "Adults: {quantity}",
+      "removeAria": "Delete activity",
+      "quantityLabel": "Adult count",
+      "subtotal": "Partial total"
+    },
+    "checkout": {
+      "title": "User and payment information",
+      "description": "Provide your details to confirm the order."
+    },
+    "form": {
+      "defaults": {
+        "country": "Mexico"
+      },
+      "labels": {
+        "firstName": "Given name(s) *",
+        "lastName": "Surname(s) *",
+        "email": "Email address *",
+        "phone": "Mobile phone *",
+        "city": "Town / City *",
+        "state": "State / Province *",
+        "street": "Street name *",
+        "number": "Ext. / Int. number *",
+        "neighborhood": "Neighborhood *",
+        "postalCode": "ZIP / Postal code *",
+        "country": "Country *"
+      },
+      "placeholders": {
+        "firstName": "Your given name",
+        "lastName": "Your surnames",
+        "email": "user@domain.com",
+        "phone": "55 1234 5678",
+        "city": "City",
+        "state": "State",
+        "street": "Thoroughfare",
+        "number": "House or unit number",
+        "neighborhood": "District or neighborhood",
+        "postalCode": "Postal zone",
+        "country": "Mexico"
+      }
+    },
+    "payment": {
+      "title": "Banking details",
+      "labels": {
+        "cardNumber": "Card number *",
+        "cardName": "Printed cardholder name *",
+        "month": "Exp. month *",
+        "year": "Exp. year *",
+        "cvv": "CVV security code *"
+      },
+      "placeholders": {
+        "cardNumber": "1234 5678 9012 3456",
+        "cardName": "AS SHOWN ON CARD",
+        "month": "MM",
+        "year": "YY",
+        "cvv": "000"
+      },
+      "note": "Payment details are securely transmitted to process the charge via Etomin.",
+      "processing": "Verifying funds...",
+      "submit": "Confirm payment"
+    },
+    "summary": {
+      "title": "Breakdown",
+      "subtotal": "Net amount",
+      "coupon": "Promo code",
+      "noCoupon": "Unregistered",
+      "couponApplied": "{code} (-{discount}%)",
+      "discount": "Applied discount",
+      "vat": "VAT tax (16%)",
+      "total": "Total due"
+    },
+    "coupon": {
+      "title": "Discount voucher",
+      "placeholder": "Type your code",
+      "apply": "Validate",
+      "messages": {
+        "empty": "Please type a voucher code.",
+        "invalid": "The voucher is invalid or expired.",
+        "applied": "Promo code active. {discount}% savings applied."
+      }
+    },
+    "info": {
+      "emailConfirmation": "You will receive a confirmation receipt by email.",
+      "processedInFlow": "Payment settles within this section.",
+      "noRedirects": "No redirects to external portals."
+    },
+    "alerts": {
+      "couponEmptyTitle": "Missing code",
+      "couponEmptyMessage": "Provide a promo code to apply savings.",
+      "couponInvalidTitle": "Unrecognized code",
+      "couponInvalidMessage": "The entered text does not match any current promotion.",
+      "couponAppliedTitle": "Discount redeemed",
+      "couponAppliedMessage": "A {discount}% discount has been applied to your order.",
+      "cartEmptyTitle": "Basket is empty",
+      "cartEmptyMessage": "Please add at least one experience.",
+      "invalidTotalTitle": "Incorrect balance",
+      "invalidTotalMessage": "The accumulated basket total is invalid.",
+      "paymentApprovedTitle": "Charge authorized",
+      "paymentApprovedWithWarningMessage": "{warning} Review system logs or check reservation status shortly.",
+      "paymentSuccessTitle": "Successful transaction",
+      "paymentSuccessMessage": "Your order was processed properly and confirmation emails were sent.",
+      "paymentErrorTitle": "Charge processing failure",
+      "emailIssueFallback": "Payment went through, but an error occurred while dispatching digital confirmation messages."
+    },
+    "errors": {
+      "paymentRejected": "The transaction was declined by the bank.",
+      "unexpected": "An unexpected system error occurred."
+    }
+  },
+  "Features": {
+    "badge": "Why tour with Destino Privado?",
+    "title": {
+      "line1": "The core reasons for our",
+      "line2": "unique offer"
+    },
+    "features": {
+      "guides": {
+        "title": "Certified specialists",
+        "description": "We partner with seasoned local guides to guarantee expert accompaniment along your journey."
+      },
+      "unique": {
+        "title": "Exclusive adventures",
+        "description": "We feature one-of-a-kind experiences across the nation's most captivating regions."
+      },
+      "prices": {
+        "title": "Accessible rates",
+        "description": "We deliver highly competitive pricing in the industry while standing behind total traveler satisfaction."
+      }
+    },
+    "images": {
+      "guidesAlt": "Tour coordinators",
+      "boatAlt": "Boat excursion"
+    }
+  },
+  "Experiences": {
+    "loading": {
+      "title": "Searching for adventures...",
+      "description": "We are assembling ideal itineraries for you."
+    },
+    "title": {
+      "line1": "Explore our",
+      "highlight": "most recent experiences"
+    },
+    "viewAll": "Show all",
+    "card": {
+      "badge": "Adventure",
+      "defaultDestination": "Mexico",
+      "explore": "View adventure details"
+    }
+  },
+  "Destinations": {
+    "loading": {
+      "title": "Searching destinations...",
+      "description": "We are organizing top locations for your upcoming trip."
+    },
+    "badge": "Featured spots",
+    "title": {
+      "line1": "Discover",
+      "highlight": "breathtaking places"
+    },
+    "description": "Explore primary regions where our journeys come to life.",
+    "card": {
+      "label": "Location",
+      "explore": "Explore"
+    }
+  },
+  "CustomTour": {
+    "title": {
+      "line1": "Customized Itinerary",
+      "highlight": "across Mexico"
+    },
+    "badge": "Flexible rate based on travel layout",
+    "description": {
+      "paragraph1": "Craft a trip fully tailored to your preferences, selecting the regions, stops, and activities that captivate you most.",
+      "paragraph2": "Mix and match options freely, including: cultural journeys, culinary tastings, extreme activities, magical town visits, or beach escapes.",
+      "paragraph3": "Complete versatility in total days, party size, transport logistics, and add-on services like personal coordinators, specialized shuttles, and hotel bookings.",
+      "paragraph4": "The ideal choice for travelers wishing to experience Mexico on their own terms with an itinerary created exclusively for them."
+    },
+    "buttons": {
+      "quote": "Request quote",
+      "pay": "Proceed to checkout"
+    },
+    "floatingCard": {
+      "label": "Tailor-made itinerary",
+      "title": "Explore without boundaries"
+    },
+    "imageAlt": "Customized journey through Mexico"
+  },
+  "Differentiators": {
+    "badge": "Our core principles",
+    "title": {
+      "line1": "The values that",
+      "highlight": "distinguish us in the market"
+    },
+    "items": {
+      "planning": {
+        "title": "Logistics",
+        "description": "We handle optimal timing and seamless schedules across every trip"
+      },
+      "support": {
+        "title": "Guidance",
+        "description": "We offer thorough assistance from initial inquiry until you return home"
+      },
+      "variety": {
+        "title": "Diversity",
+        "description": "We maintain recreation choices across destinations suited for every travel style"
+      },
+      "satisfaction": {
+        "title": "Guarantee",
+        "description": "Our flawless track record stands behind us, allowing us to guarantee complete delight"
+      }
+    }
+  },
+  "footer": {
+    "brand": {
+      "subtitle": "Unrepeatable moments across Mexico",
+      "description": "We organize genuine and unforgettable journeys for explorers wanting to uncover Mexican highlights in a unique, reliable, and adaptable way."
+    },
+    "badges": {
+      "securePayments": "Protected transactions",
+      "personalizedAttention": "Tailored guidance"
+    },
+    "contact": {
+      "title": "Contact channels",
+      "location": "Main office",
+      "address": "730 INSURGENTES SUR AVENUE, FLOOR 1, OFFICE 234, DEL VALLE CENTRO, BENITO JUÁREZ DISTRICT, ZIP CODE 03100, MEXICO CITY.",
+      "email": "Digital inbox",
+      "phone": "Phone line"
+    },
+    "legal": {
+      "title": "Corporate area",
+      "privacy": "Privacy Policy",
+      "terms": "Terms and Conditions",
+      "refunds": "Refund and Return Policy"
+    },
+    "copyright": "Copyright © 2026. All corporate rights reserved.",
+    "designed": "Developed to inspire lasting memories."
+  },
+  "categoryPage": {
+    "loading": "Loading adventure catalog...",
+    "hero": {
+      "badge": "Exclusive trips",
+      "available": "Scheduled departures",
+      "destination": "Location"
+    },
+    "toolbar": {
+      "results": "Matches found",
+      "experiences": "activities"
+    },
+    "sort": {
+      "default": "Filter by",
+      "priceAsc": "Price: lowest to highest",
+      "priceDesc": "Price: highest to lowest",
+      "newest": "Monthly additions",
+      "oldest": "Oldest listed",
+      "name": "Alphabetical title"
+    },
+    "price": {
+      "from": "Starting rate from",
+      "tax": "MXN (Taxes included)"
+    },
+    "buttons": {
+      "view": "Review details"
+    },
+    "empty": {
+      "title": "Coming up soon",
+      "description": "We are designing captivating new itineraries for this catalog section."
+    },
+    "notFound": {
+      "title": "Product group not located",
+      "description": "It appears this experience is no longer listed or the section moved location.",
+      "button": "View excursion directory"
+    }
+  },
+  "contact": {
+    "hero": {
+      "badge": "At your complete service",
+      "title": "Let's start organizing your",
+      "titleHighlight": "upcoming adventure",
+      "description": "Share what style of vacation you envision and our advisors will help shape an exclusive plan in Mexico.",
+      "imageAlt": "Inquiry form"
+    },
+    "info": {
+      "badge": "Contact us",
+      "title": "Ready to guide you",
+      "description": "We answer technical questions, prepare estimates, design private trips, and organize group departures."
+    },
+    "cards": {
+      "address": {
+        "title": "Headquarters address",
+        "description": "AVENIDA INSURGENTES SUR N°730, FLOOR 1, OFFICE 234, DEL VALLE CENTRO, BENITO JUÁREZ DISTRICT, ZIP CODE 03100, MEXICO CITY."
+      },
+      "email": {
+        "title": "Email inbox"
+      },
+      "phone": {
+        "title": "Phone line"
+      }
+    },
+    "form": {
+      "badge": "Direct inbox",
+      "title": "Would you like us to reach out?",
+      "description": "Provide your contact details and a consultant on our team will reach back out shortly.",
+      "submit": "Submit details",
+      "loading": "Processing submission...",
+      "subjectDefault": "General inquiry",
+      "fields": {
+        "name": {
+          "label": "Full name",
+          "placeholder": "First and last name"
+        },
+        "email": {
+          "label": "Electronic inbox",
+          "placeholder": "user@domain.com"
+        },
+        "phone": {
+          "label": "Contact number",
+          "placeholder": "+52 55..."
+        },
+        "message": {
+          "label": "Additional specifics",
+          "placeholder": "Share more particulars regarding the journey you wish to take..."
+        }
+      }
+    },
+    "success": {
+      "title": "Form received!",
+      "description": "A representative will get in touch with you shortly.",
+      "button": "Send another inquiry"
+    }
+  },
+  "customQuote": {
+    "hero": {
+      "badge": "Premium service",
+      "title": "Tailored itinerary",
+      "description": "Enter the quote folio number and price provided by our staff to load your custom experience into the basket.",
+      "imageAlt": "Custom trip"
+    },
+    "content": {
+      "badge": "Custom block",
+      "title": "Refine your itinerary",
+      "description": "Enter your previous quote references to proceed with processing your reservation."
+    },
+    "form": {
+      "quoteId": "Assigned folio number",
+      "quotePlaceholder": "E.g., GB-2026-001",
+      "amount": "Balance to settle",
+      "people": "Total passengers",
+      "quantity": "Volume"
+    },
+    "total": {
+      "label": "Estimated final cost"
+    },
+    "cta": "Load into basket",
+    "footer": "Your quote undergoes internal verification once the transaction completes.",
+    "alerts": {
+      "quoteRequired": "Entering the folio number is mandatory",
+      "invalidAmount": "Please enter a valid price figure"
+    },
+    "cart": {
+      "title": "Tailor-made getaway plan",
+      "titleEnglish": "Custom tour",
+      "quoteLabel": "Quote folio",
+      "destination": "Customized",
+      "duration": "Customized"
+    }
+  },
+  "OurTravel": {
+    "hero": {
+      "badge": "Our origins",
+      "title": "Designing adventures that bridge travelers with the genuine heart of Mexico",
+      "description": "Tourism is not merely moving places; it means exploring, being moved, and holding onto memories that endure over the years.",
+      "imageAlt": "Mountaineer reaching the peak"
+    },
+    "mission": {
+      "title": "Our philosophy",
+      "paragraphs": [
+        "Our central goal is connecting people with Mexico's vast cultural, historical, and natural diversity. Ranging from guided city tours in colonial hubs, entry to archaeological sites, outdoor adventures along coastlines and forests, to exclusive culinary activities, we present a rich catalog fitting varied schedules, preferences, and budgets.",
+        "Supported by staff skilled in tourism administration and guest care, we ensure smooth booking workflows, tailored support, and total peace of mind that every itinerary has been meticulously chosen to deliver high standards of quality, safety, and delight.",
+        "We hold the belief that traveling goes far beyond simple transit: it involves discovering hidden spots, sensing local atmospheres, and forging lasting memories. For this reason, we work continuously to build the ideal bridge between your desire to travel Mexican states and the experiences that render your stay unforgettable.",
+        "We excel at highlighting Mexico's greatest strengths through direct, genuine experiences. Concentrating purely on excursions and experiences within national borders, we connect local and international adventurers with the cultural, environmental, and culinary wealth that establishes our country as a premier travel spot.",
+        "Our objective is for every visitor to experience Mexico closely and securely, backed by effortless reservations, transparent rates, and reliable support. From expeditions around ancient ruins and magical villages to sporting challenges along beaches, mountain ranges, and tropical locations, we set flexible departures for diverse travel rhythms.",
+        "Relying on a devoted team and a structured network of certified local guides, we strive daily to uphold technical excellence across every journey and the satisfaction of guests who trust our hands. We believe touring the country means entering its authentic spirit, history, and warm hospitality. Therefore, we provide the key to a suite of activities that will convert your trip into an everlasting memory."
+      ]
+    },
+    "sideCard": {
+      "badge": "Traverse the country",
+      "title": "To discover Mexico's destinations is to live them",
+      "description": "Every activity is organized to bring you closer to the historical chronology, customs, natural wonders, and true soul of the nation.",
+      "imageAlt": "Athlete scaling a cliff face"
+    }
+  },
+  "toursPage": {
+    "hero": {
+      "badge": "Genuine departures across the republic",
+      "title": "Explore itineraries created to experience authentic Mexico.",
+      "description": "Review unrepeatable travel choices, select your preferred location, and book in a few clicks via a fast, modern platform."
+    },
+    "sidebar": {
+      "title": "Search filters",
+      "subtitle": "Personalize your browsing",
+      "destination": "Location",
+      "allDestinations": "All areas",
+      "adults": "Adults",
+      "viewAvailability": "Check dates"
+    },
+    "results": {
+      "badge": "Scheduled excursions",
+      "title": "{count} itineraries located"
+    },
+    "sort": {
+      "default": "Sort records by",
+      "priceAsc": "Price: most affordable first",
+      "priceDesc": "Price: highest to lowest cost",
+      "newestDesc": "Most recent additions first",
+      "newestAsc": "Older listings first",
+      "name": "Alphabetical order"
+    },
+    "states": {
+      "loading": "Syncing excursions...",
+      "error": "A failure occurred while attempting to retrieve excursions."
+    },
+    "price": {
+      "from": "Starting at",
+      "vatIncluded": "VAT included"
+    },
+    "buttons": {
+      "add": "Add to order",
+      "details": "Technical spec"
+    },
+    "pagination": {
+      "previous": "Back",
+      "next": "Forward",
+      "pageOf": "Page {current} out of {total}"
+    }
+  },
+  "tourDetail": {
+    "notFoundTitle": "Excursion not located",
+    "notFoundDescription": "The requested activity is not recorded in inventory or was removed from the server.",
+    "backToTours": "Return to excursion directory",
+    "heroDescription": "Enjoy a premium-grade service engineered to reveal spectacular landscapes with complete comfort, adventure elements, and expert guidance.",
+    "information": "Technical specification",
+    "descriptionTitle": "Activity breakdown",
+    "from": "Rate starting from",
+    "taxIncluded": "Taxes included (VAT)",
+    "perPerson": "per passenger",
+    "tourDate": "Assigned date",
+    "numberOfAdults": "Adult count",
+    "adults": "Adults",
+    "total": "Cumulative total cost",
+    "addToCart": "Add to shopping basket",
+    "reserveNow": "Reserve and pay now!",
+    "relatedSubtitle": "Suggestions you might enjoy",
+    "relatedTitle": "Recommended similar excursions",
+    "viewDetails": "View full details",
+    "disclaimer": "All activity requests and reservations remain subject to spot availability. Final validation is dependent on verifying capacity, resources, and relevant vendors. Destino Privado retains the right to modify dates, times, or experience details, pledging to inform the customer as far in advance as possible."
+  }
+}
