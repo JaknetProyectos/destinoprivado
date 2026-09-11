@@ -331,12 +331,7 @@ export default function CategoryToursPage() {
                     className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
 
-                  {/* Badge de Categoría */}
-                  <div className="absolute top-4 left-4 flex gap-2">
-                    <span className="rounded-full bg-[#035020] px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-white shadow-md">
-                      {category.title}
-                    </span>
-                  </div>
+              
 
                   {/* Badge de Duración */}
                   {tour.duration && (
@@ -371,7 +366,8 @@ export default function CategoryToursPage() {
                         <span className="text-2xl font-black text-[#035020]">
                           ${Number(tour.price).toLocaleString()}
                         </span>
-                        <span className="text-xs text-gray-500 font-medium">MXN</span>
+                        
+                        <span className="text-xs text-gray-500 font-medium">{t("price.tax")}</span>
                       </div>
                     </div>
 

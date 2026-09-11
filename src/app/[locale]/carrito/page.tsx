@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState, type FormEvent } from "react";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 
 import { toast } from "sonner";
 import Image from "next/image";
@@ -217,7 +217,7 @@ export default function CartPage() {
         body: JSON.stringify({
           orderId,
           amount,
-          total: formatPrice(total),
+          total: formatPrice(total,"MXN",true),
           couponCode: coupon?.code ?? null,
           discountPercent: coupon?.discount ?? 0,
           paymentResult,
@@ -426,7 +426,7 @@ export default function CartPage() {
                                 </button>
                               </div>
 
-                              <p className="text-2xl font-black text-[#035020]">{formatPrice(lineTotal)}</p>
+                              <p className="text-2xl font-black text-[#035020]">{formatPrice(lineTotal,"MXN",true)}</p>
                             </div>
                           </div>
                         </div>
@@ -690,7 +690,7 @@ export default function CartPage() {
                   <div className="space-y-4 text-base">
                     <div className="flex justify-between text-gray-600">
                       <span>{t("summary.subtotal")}</span>
-                      <span className="font-bold">{formatPrice(subtotal)}</span>
+                      <span className="font-bold">{formatPrice(subtotal,"MXN",true)}</span>
                     </div>
 
                     <div className="flex justify-between text-gray-600">
@@ -703,13 +703,13 @@ export default function CartPage() {
                     {discountAmount > 0 && (
                       <div className="flex justify-between text-[#035020] font-bold">
                         <span>{t("summary.discount")}</span>
-                        <span>-{formatPrice(discountAmount)}</span>
+                        <span>-{formatPrice(discountAmount,"MXN",true)}</span>
                       </div>
                     )}
 
                     <div className="flex justify-between items-baseline pt-4 border-t text-gray-900">
                       <span className="text-lg font-bold">{t("summary.total")}</span>
-                      <span className="text-3xl font-black text-[#035020]">{formatPrice(total)}</span>
+                      <span className="text-3xl font-black text-[#035020]">{formatPrice(total,"MXN",true)}</span>
                     </div>
                   </div>
 

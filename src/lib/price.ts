@@ -1,7 +1,7 @@
 export const formatPrice = (
     amount: number,
     currency: string = "MXN",
-    includeCurrency: boolean = true
+    includeCurrency: boolean = false
 ): string => {
     const formatted = new Intl.NumberFormat("es-MX", {
         minimumFractionDigits: 2,

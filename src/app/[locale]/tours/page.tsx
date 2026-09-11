@@ -22,7 +22,8 @@ import {
   Heart,
   Calendar,
 } from "lucide-react";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
+import { formatPrice } from "@/lib/price";
 
 type SortBy =
   | "default"
@@ -413,10 +414,10 @@ export default function ToursPage() {
 
                               <div className="flex items-baseline gap-1">
                                 <span className="text-2xl font-black text-[#035020]">
-                                  ${Number(tour.price).toLocaleString()}
+                                  {formatPrice(tour.price)}
                                 </span>
                                 <span className="text-xs font-medium text-gray-500">
-                                  MXN
+                                  MXN {t("price.vatIncluded")}
                                 </span>
                               </div>
                             </div>

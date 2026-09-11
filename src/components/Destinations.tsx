@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { useMemo } from "react";
 import { useCategories } from "@/hooks/useCategories";
 import { ArrowRight, Compass, MapPin, Sparkles } from "lucide-react";

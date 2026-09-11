@@ -6,6 +6,7 @@ import {
   useContext,
   useEffect,
   useMemo,
+  useRef,
   useState,
   type ReactNode,
 } from "react";
@@ -58,7 +59,7 @@ const CartContext = createContext<CartContextType | undefined>(undefined);
 /**
  * UNA SOLA KEY
  */
-const STORAGE_KEY = "gobeyond-cart";
+const STORAGE_KEY = "destinoprivado-cart";
 
 function normalizeTour(tour: TourLike): CartTour {
   return {
@@ -113,32 +114,33 @@ function parseCart(value: string | null): CartItem[] {
   }
 }
 
-function getInitialCart(): CartItem[] {
-  if (typeof window === "undefined") {
-    return [];
-  }
-
-  return parseCart(localStorage.getItem(STORAGE_KEY));
-}
-
 export function CartProvider({ children }: { children: ReactNode }) {
   const [items, setItems] = useState<CartItem[]>([]);
+  const isInitialized = useRef(false);
 
   /**
-   * CARGA INICIAL
+   * CARGA INICIAL (Solo en montaje)
    */
   useEffect(() => {
-    const storedCart = getInitialCart();
-    setItems(storedCart);
+    if (typeof window !== "undefined") {
+      const stored = localStorage.getItem(STORAGE_KEY);
+      if (stored) {
+        setItems(parseCart(stored));
+      }
+      isInitialized.current = true;
+    }
   }, []);
 
   /**
    * SYNC LOCALSTORAGE
+   * Guarda únicamente si ya se completó la carga inicial para evitar borrar localStorage
    */
   useEffect(() => {
     if (typeof window === "undefined") return;
 
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(items));
+    if (isInitialized.current) {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(items));
+    }
   }, [items]);
 
   /**

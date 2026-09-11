@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -28,6 +28,7 @@ import {
   Sparkles,
   Info,
 } from "lucide-react";
+import { formatPrice } from "@/lib/price";
 
 export default function TourDetailPage() {
   const params = useParams();
@@ -244,7 +245,7 @@ export default function TourDetailPage() {
                   <div className="flex items-baseline justify-center gap-1">
                     <span className="text-3xl font-black text-[#E01E5A]">$</span>
                     <span className="text-5xl md:text-6xl font-black text-gray-900 tracking-tight">
-                      {Number(tour.price).toLocaleString()}
+                      {formatPrice(tour.price)}
                     </span>
                   </div>
 
